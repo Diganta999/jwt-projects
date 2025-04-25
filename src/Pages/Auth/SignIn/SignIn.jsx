@@ -2,7 +2,7 @@ import Lottie from 'lottie-react';
 import React, { useContext } from 'react';
 import { FaFacebook, FaGoogle, FaLock, FaTwitter } from 'react-icons/fa';
 import { HiMail } from 'react-icons/hi';
-import { Link, useNavigate, useNavigationType } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import registerLottile from '../../../assets/Lottie files/SignUp LogIn/Animation - 1745496697666.json'
 import { AuthContext } from '../../../AuthProvider/AuthProvider';
 import Swal from 'sweetalert2';

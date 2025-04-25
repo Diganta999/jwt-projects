@@ -33,6 +33,11 @@ const AuthProvider = ({ children }) => {
       return Promise.reject(new Error('No user is currently signed in.'));
     }
   };
+  // Sign out user
+  const signOutUser = () => {
+    setLoading(true);
+    return auth.signOut();
+  };
 
   // Auth state listener
   useEffect(() => {
@@ -51,7 +56,8 @@ const AuthProvider = ({ children }) => {
     signUpWithPassword,
     signInUserWithPassword,
     updateUserProfile,
-    setUser
+    setUser,
+    signOutUser 
   };
 
   return (
